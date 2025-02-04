@@ -1,0 +1,49 @@
+Q1)What is the use of float property? Which property is the better alternative to it?
+Ans) Float property in CSS is used for creating layouts in the webpage. Though, float is not an optimsed way to create layouts but still it is used in some use cases. with the help of float we can place two or more containers side by side.if we have two containers one container containing image and other container having some text, if we apply float property to the image then the text is placed in such a way that the text wraps the image. Same functionality can also be achieved using clear property. a better alternative for float and clear is using flexbox for layout purposes.
+
+Q2)Explain the difference between absolute and relative positions.
+Ans) - Absolute Positioning -> in absolute positioning the element whose position is declared as absolute is placed relative to its nearest positioned ancestor, if there does not exist any positioned ancestor then it positions itself according to the <html> or <body> element. the position of other elements around it also get repositioned.
+
+Relative Positioning -> in relative positioning the element whose position is declared as relative is placed relative to its normal position in the document flow. other elements around it does not change its position.
+
+
+Q3)What are the different types of CSS Selectors?
+Ans) there are three ways to aplly CSS to your webpage -:
+    1) Inline CSS - in Inline CSS , the CSS is applied is applied using the style attribute inside each tag.
+    ex->  <div style="color:red;"> this is red <div>
+    2) Interval CSS - In internal CSS , the CSS is applied using the <style> tag which is placed inside the <head> tag.
+    ex -> <html>
+          <head>
+            <title>Internal CSS</title>
+            <style>
+                p{
+                    color:"red";
+                }
+            </style>
+        </head>
+        <body>
+            <p>This is red</p>
+        </body>
+        </html>
+    3) External CSS - In external CSS , we make use of an external CSS file to apply CSS to our HTML document. The CSS file linked to the HTML file using <link> tag which is placed inside the <head> tag
+    ex ->
+    index.html
+    <html>
+          <head>
+            <title>Internal CSS</title>
+            <link type="text/css" rel="stylesheet" href="style.css" />
+        </head>
+        <body>
+            <p>This is red</p>
+        </body>
+    </html>
+    style.css
+    p{
+        color:red;
+    }
+
+Q4)How are inline and block elements different from each other?
+Ans) - Inline Elements -> Inline Elements are those HTML elements that occupy space according to the amount of text entered inside these tags. ex -> <span>, <a>
+
+Block Elements -> Bloack Elements are those elements that take up width of the whole document irrespective of the amount of content entered inside these elements.
+Ex -> <div> , <p>
