@@ -1,0 +1,34 @@
+main{
+    display:flex;
+    justify-content: center;
+}
+.popup-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    flex-direction: column;
+    width:55%;
+}
+.button-container{
+    padding-bottom: 40px;
+}
+h2{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+#proceed{
+    font-size: 20px;
+    padding:5px 10px;
+    background-color: aquamarine;
+    border: none;
+    color:white;
+}
+#cancel{
+    font-size: 20px;
+    padding:5px 10px;  
+    background-color: rgb(167, 163, 163); 
+    border:none;
+    color: white;
+}
